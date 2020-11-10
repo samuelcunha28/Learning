@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samue\\Desktop\\Learning\\C#\\While Loops\\While Loops\\While Loops.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\Desktop\\Learning\\C#\\While and For Loops\\While Loops\\While Loops.csproj",
       "projectName": "While Loops",
-      "projectPath": "C:\\Users\\samue\\Desktop\\Learning\\C#\\While Loops\\While Loops\\While Loops.csproj",
+      "projectPath": "C:\\Users\\samue\\Desktop\\Learning\\C#\\While and For Loops\\While Loops\\While Loops.csproj",
       "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samue\\Desktop\\Learning\\C#\\While Loops\\While Loops\\obj\\",
+      "outputPath": "C:\\Users\\samue\\Desktop\\Learning\\C#\\While and For Loops\\While Loops\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

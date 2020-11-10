@@ -1,0 +1,24 @@
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.exe
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.deps.json
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.runtimeconfig.json
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.runtimeconfig.dev.json
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.dll
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.pdb
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.AssemblyInfo.cs
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.dll
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.pdb
+C:\Users\samue\Desktop\Learning\C#\While Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.genruntimeconfig.cache
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.exe
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.deps.json
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.runtimeconfig.json
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.runtimeconfig.dev.json
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.dll
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\bin\Debug\netcoreapp3.1\While Loops.pdb
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.AssemblyInfo.cs
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.dll
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.pdb
+C:\Users\samue\Desktop\Learning\C#\While and For Loops\While Loops\obj\Debug\netcoreapp3.1\While Loops.genruntimeconfig.cache
