@@ -10,3 +10,16 @@ C:\Users\Samuel\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.
 C:\Users\Samuel\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.dll
 C:\Users\Samuel\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.pdb
 C:\Users\Samuel\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.genruntimeconfig.cache
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\bin\Debug\netcoreapp3.1\Conditions.exe
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\bin\Debug\netcoreapp3.1\Conditions.deps.json
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\bin\Debug\netcoreapp3.1\Conditions.runtimeconfig.json
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\bin\Debug\netcoreapp3.1\Conditions.runtimeconfig.dev.json
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\bin\Debug\netcoreapp3.1\Conditions.dll
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\bin\Debug\netcoreapp3.1\Conditions.pdb
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.csprojAssemblyReference.cache
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.AssemblyInfo.cs
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.dll
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.pdb
+C:\Users\samue\Desktop\Learning\C#\Conditions\Conditions\obj\Debug\netcoreapp3.1\Conditions.genruntimeconfig.cache
