@@ -1,0 +1,13 @@
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\bin\Debug\netcoreapp3.1\Classes and Objects.exe
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\bin\Debug\netcoreapp3.1\Classes and Objects.deps.json
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\bin\Debug\netcoreapp3.1\Classes and Objects.runtimeconfig.json
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\bin\Debug\netcoreapp3.1\Classes and Objects.runtimeconfig.dev.json
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\bin\Debug\netcoreapp3.1\Classes and Objects.dll
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\bin\Debug\netcoreapp3.1\Classes and Objects.pdb
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\obj\Debug\netcoreapp3.1\Classes and Objects.csprojAssemblyReference.cache
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\obj\Debug\netcoreapp3.1\Classes and Objects.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\obj\Debug\netcoreapp3.1\Classes and Objects.AssemblyInfo.cs
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\obj\Debug\netcoreapp3.1\Classes and Objects.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\obj\Debug\netcoreapp3.1\Classes and Objects.dll
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\obj\Debug\netcoreapp3.1\Classes and Objects.pdb
+C:\Users\samue\Desktop\Learning\C#\POO\Classes and Objects\obj\Debug\netcoreapp3.1\Classes and Objects.genruntimeconfig.cache
