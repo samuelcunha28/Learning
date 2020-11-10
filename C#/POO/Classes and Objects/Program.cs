@@ -17,6 +17,8 @@ namespace Classes_and_Objects
             italianChef.MakeChicken();
             italianChef.MakePasta();
 
+            chef.MakeSpecialDish();
+            italianChef.MakeSpecialDish();
         }
     }
 }

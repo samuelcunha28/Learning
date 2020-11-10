@@ -14,7 +14,7 @@ namespace Classes_and_Objects
         {
             Console.WriteLine("The chef makes salad");
         }
-        public void MakeSpecialDish()
+        public virtual void MakeSpecialDish()
         {
             Console.WriteLine("The chef makes a special dish");
         }
