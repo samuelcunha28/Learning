@@ -4789,25 +4789,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samue\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\samue\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samue\\Desktop\\Learning\\.NET\\WebAPIMongo\\BooksApi\\BooksApi\\BooksApi.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\Desktop\\Study\\Learning\\.NET\\WebAPIMongo\\BooksApi\\BooksApi\\BooksApi.csproj",
       "projectName": "BooksApi",
-      "projectPath": "C:\\Users\\samue\\Desktop\\Learning\\.NET\\WebAPIMongo\\BooksApi\\BooksApi\\BooksApi.csproj",
+      "projectPath": "C:\\Users\\samue\\Desktop\\Study\\Learning\\.NET\\WebAPIMongo\\BooksApi\\BooksApi\\BooksApi.csproj",
       "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samue\\Desktop\\Learning\\.NET\\WebAPIMongo\\BooksApi\\BooksApi\\obj\\",
+      "outputPath": "C:\\Users\\samue\\Desktop\\Study\\Learning\\.NET\\WebAPIMongo\\BooksApi\\BooksApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
         "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -4818,6 +4813,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -4829,6 +4825,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MongoDB.Driver": {
             "target": "Package",
@@ -4853,7 +4850,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

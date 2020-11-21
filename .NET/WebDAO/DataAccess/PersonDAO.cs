@@ -16,7 +16,7 @@ namespace WebDAO.DataAccess
 
         public PersonDAO(IConnection connection)
         {
-            _connection = connection;
+            this._connection = connection;
         }
 
         public Person Create(Person model)
@@ -24,16 +24,16 @@ namespace WebDAO.DataAccess
             using (SqlCommand cmd = _connection.Fetch().CreateCommand())
             {
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO Person (FirstName, LastName, Age, Email)" +
-                    "VALUES (@fn, @ln, @age, @email);" +
-                    "SELECT @@Identity";
+                cmd.CommandText = "INSERT INTO Person (Id,FirstName, LastName, Age, Email)" +
+                    "VALUES (@id, @fn, @ln, @age, @email); SELECT @@Identity";
 
+                cmd.Parameters.Add("@id", SqlDbType.Int).Value = model.Id;
                 cmd.Parameters.Add("@fn", SqlDbType.Text).Value = model.FirstName;
                 cmd.Parameters.Add("@ln", SqlDbType.Text).Value = model.LastName;
                 cmd.Parameters.Add("@age", SqlDbType.Int).Value = model.Age;
                 cmd.Parameters.Add("@email", SqlDbType.Text).Value = model.Email;
 
-                model.Id = int.Parse(cmd.ExecuteScalar().ToString());
+                //model.Id = int.Parse(cmd.ExecuteScalar().ToString());
             }
             return model;
         }
@@ -41,11 +41,12 @@ namespace WebDAO.DataAccess
         public bool Delete(Person model)
         {
             bool deleted = false;
-
             using (SqlCommand cmd = _connection.Fetch().CreateCommand())
             {
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "DELETE FROM Person WHERE Id = @id";
+                cmd.CommandText = "DELETE FROM Person WHERE Id=@id";
+
+                cmd.Parameters.Add("@Id", SqlDbType.Int).Value = model.Id;
 
                 if (cmd.ExecuteNonQuery() > 0)
                 {
@@ -63,16 +64,13 @@ namespace WebDAO.DataAccess
         public Person FindByID(params object[] keys)
         {
             Person p = null;
-
             using (SqlCommand cmd = _connection.Fetch().CreateCommand())
             {
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT Id, FirstName, LastName, Age, Email FROM PERSON" +
-                    "WHERE Id = @id";
+                cmd.CommandText = "SELECT Id, FirstName, LastName, Age, Email FROM Person " +
+                    "WHERE Id=@id";
 
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = keys[0];
-                // cmd.Parameters.Add("@id2", SqlDbType.Int).Value = keys[1];
-                // cmd.Parameters.Add("@id3", SqlDbType.Int).Value = keys[2];
 
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -98,8 +96,7 @@ namespace WebDAO.DataAccess
             using (SqlCommand cmd = _connection.Fetch().CreateCommand())
             {
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT Id, FirstName, LastName, Age, Email FROM Person" +
-                    "ORDER BY FirstName";
+                cmd.CommandText = "SELECT Id, FirstName, LastName, Age, Email FROM Person ORDER BY FirstName";
 
                 using (SqlDataAdapter adpt = new SqlDataAdapter(cmd))
                 {
@@ -108,7 +105,7 @@ namespace WebDAO.DataAccess
 
                     foreach (DataRow row in table.Rows)
                     {
-                        Person person = new Person
+                        Person p = new Person
                         {
                             Id = int.Parse(row["Id"].ToString()),
                             FirstName = row["FirstName"].ToString(),
@@ -116,7 +113,8 @@ namespace WebDAO.DataAccess
                             Age = int.Parse(row["Age"].ToString()),
                             Email = row["Email"].ToString(),
                         };
-                        people.Add(person);
+                        people.Add(p);
+
                     }
                 }
             }
@@ -128,7 +126,8 @@ namespace WebDAO.DataAccess
             using (SqlCommand cmd = _connection.Fetch().CreateCommand())
             {
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "UPDATE Person SET FirstName=@fn, LastName=@ln, Age=@age, Email=@email" +
+                cmd.CommandText = "UPDATE Person " +
+                    "SET FirstName=@fn, LastName=@ln, Age=@age, Email=@email " +
                     "WHERE Id=@id";
 
                 cmd.Parameters.Add("@fn", SqlDbType.Text).Value = model.FirstName;

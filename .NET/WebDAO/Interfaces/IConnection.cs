@@ -7,14 +7,9 @@ using System.Threading.Tasks;
 namespace WebDAO.Interfaces
 {
     public interface IConnection
-    {   
-        // open DB connection
+    {
         SqlConnection Open();
-
-        // fetch the open connetion
         SqlConnection Fetch();
-
-        // close DB connection
         void Close();
     }
 }

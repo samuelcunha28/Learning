@@ -9,17 +9,19 @@ using WebDAO.Models;
 
 namespace WebDAO.Controllers
 {
-    public class PeopleController : ControllerBase 
+    [ApiController]
+    [Route("api/[controller]")]
+    public class PeopleController : ControllerBase
     {
-        private IConnection _connection;
+        private readonly IConnection _connection;
 
-        public PeopleController(IConnection connection)
+        public PeopleController()
         {
             _connection = new Connection();
             _connection.Fetch();
         }
 
-        // CRUD 
+        //CRUD
         // CREATE
         [HttpPost]
         public IActionResult Create(Person person)
@@ -30,18 +32,26 @@ namespace WebDAO.Controllers
             return CreatedAtRoute("Get Person", new { id = person.Id }, person);
         }
 
-        // READ
+        // READ 
         [HttpGet("{id}", Name = "Get Person")]
-        public ActionResult<Person> GetByID(long id)
+        public ActionResult<Person> GetById(long id)
         {
             PersonDAO personDAO = new PersonDAO(_connection);
             var person = personDAO.FindByID(id);
-
             if (person == null)
             {
-                return NotFound(); // error 404 not found
+                return NotFound();
             }
+
             return person;
+        }
+
+        // GETALL
+        [HttpGet]
+        public ActionResult<List<Person>> GetAll()
+        {
+            PersonDAO personDAO = new PersonDAO(_connection);
+            return personDAO.GetAll().ToList();
         }
 
         // UPDATE
@@ -58,7 +68,6 @@ namespace WebDAO.Controllers
 
             pOld.FirstName = person.FirstName;
             pOld.LastName = person.LastName;
-            pOld.Age = person.Age;
             pOld.Email = person.Email;
 
             personDAO.Update(pOld);
@@ -66,7 +75,7 @@ namespace WebDAO.Controllers
             return NoContent();
         }
 
-        // DELETE
+        // DELETE 
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
@@ -79,8 +88,8 @@ namespace WebDAO.Controllers
             }
 
             personDAO.Delete(toDel);
-
             return NoContent();
         }
+
     }
 }

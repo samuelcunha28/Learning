@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace WebDAO.DataAccess
 
         public void Close()
         {
-            if (_connection.State == System.Data.ConnectionState.Open)
+            if (_connection.State == ConnectionState.Open)
             {
                 _connection.Close();
             }
@@ -27,7 +28,7 @@ namespace WebDAO.DataAccess
         public void Dispose()
         {
             this.Close();
-            GC.SuppressFinalize(this); // garbage collector
+            GC.SuppressFinalize(this);
         }
 
         public SqlConnection Fetch()
@@ -37,11 +38,13 @@ namespace WebDAO.DataAccess
 
         public SqlConnection Open()
         {
-            if (_connection.State == System.Data.ConnectionState.Open)
+            if (_connection.State == ConnectionState.Closed)
             {
                 _connection.Open();
             }
             return _connection;
         }
+
+        
     }
 }
