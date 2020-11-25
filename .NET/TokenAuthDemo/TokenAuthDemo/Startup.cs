@@ -15,6 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TokenAuthDemo.Data;
+using TokenAuthDemo.Repository;
 
 namespace TokenAuthDemo
 {
@@ -58,6 +59,8 @@ namespace TokenAuthDemo
                     ValidateLifetime = true
                 };
             });
+
+            services.AddSingleton<IUserRefreshTokenRepository, UserRefreshTokenRepository>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
